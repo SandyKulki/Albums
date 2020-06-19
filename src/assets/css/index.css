@@ -1,0 +1,133 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css');
+
+
+
+body{
+    background: #ffffff !important;
+;
+}
+.topNav{
+    position: "absolute";
+    top: 0;
+    width: "100%";
+  
+    padding: "1rem";
+  }
+.searchButton{
+   height: 36px;
+ 
+  
+}
+
+.container{
+    position: "relative";
+    min-height: "100vh";
+  }
+.zIndexk{z-index: 500;}
+.searchPane.noOverFlow{
+    overflow: hidden !important;
+}
+
+.topNav.modalUp{
+    z-index: unset !important;
+}
+
+html{
+    
+    font-size: 16px
+}
+
+.hideMe{
+    display: none !important
+}
+.albumContainer .left, .albumContainer img{
+   display: inline-block;
+}
+.albumContainer p, .albumContainer h4 {padding-left: 5px; color:#FFF;}
+
+.topNav .marginMe{
+    margin: 0 5px
+}
+
+.Me *:not(.favs) {
+    cursor: context-menu !important
+}
+.coverImage{
+    width:100px;
+    position: absolute;
+    left:70%;
+    padding-top:20px;
+
+}
+#root{
+    background: #666;
+}
+.albumContainer .subtitle:hover{cursor: pointer;}
+.albumContainer{
+    border: solid rgb(15, 212, 147) 2px;
+    border-radius: 10px;
+}
+
+
+
+.searchPane.active .albumContainer{
+    margin: 3rem;
+    background-color: rgb(33, 35, 37);
+    padding-left:30px;
+    padding-bottom:5px;
+    padding-top:5px;
+    color:#FFF !important;
+   
+}
+
+.albumContainer:first-child{
+    margin-top: 6rem !important
+}
+
+.searchPane.active{
+    display: block !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topNav{
+    z-index: 2
+}
+
+.intro-animated{
+    -webkit-animation: pulse 3.2s forwards infinite ease-in-out;
+    animation: pulse 3.2s forwards infinite ease-in-out
+}
+
+.monoton-font{
+    font-family: 'Playfair Display SC', serif;
+}
+
+@media all and (max-width: 769px){
+    html{
+        overflow-y: auto !important
+    }
+
+    .searchPane{
+        display: none
+    }
+
+    .shower, .titles-container{
+        width: 100% !important
+    }
+
+    .searchPane.active .albumContainer{
+        margin-left: 1rem;
+        margin-right: 1rem
+    }
+
+    .albumContainer:not(.Me){
+        margin: 0.5rem 2rem
+    }
+
+   
+}
+
